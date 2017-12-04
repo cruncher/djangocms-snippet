@@ -17,6 +17,7 @@ class SnippetPlugin(CMSPluginBase):
     render_template = 'djangocms_snippet/snippet.html'
     text_enabled = True
     text_editor_preview = False
+    cache = False
 
     def render(self, context, instance, placeholder):
         render_context = {}
